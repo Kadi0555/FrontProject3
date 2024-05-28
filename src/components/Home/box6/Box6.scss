@@ -1,0 +1,17 @@
+.block__box6{
+    .labelOne{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2px;
+        text-align: left;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .content{
+        display:flex;
+        flex-wrap: wrap;
+        gap:32px;
+        justify-content: center;
+    }
+}

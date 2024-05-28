@@ -1,0 +1,36 @@
+.Author__block{
+    width:296px;
+    height:324px;
+    text-align: center;
+    box-sizing:border-box;
+    padding-top:40px;
+    display:grid;
+    background-color: #F4F4F4;
+    &:hover{
+        background-color: #FBF6EA;
+    }
+    .image{
+        img{}
+    }
+    .text{
+        .label{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
+        .txt{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+
+        }
+    }
+    .messengers{
+        display:flex;
+        column-gap: 16px;
+        justify-content: center;
+        .msg{}
+    }
+}

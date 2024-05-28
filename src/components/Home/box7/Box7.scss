@@ -1,0 +1,50 @@
+.content__box7{
+    .container__size{
+        display:flex;
+        column-gap: 65px;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .container__content{
+            &:nth-child(1){
+                width:136px;
+                height:52px;
+                background-image: url("./images/Featuredin.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(2){
+                width:160px;
+                height:32px;
+                background-image: url("./images/Logo1.png");
+                background-repeat: no-repeat;
+            }
+            &:nth-child(3){
+                width:160px;
+                height:32px;
+                background-image: url("./images/Logo 2.png");
+                background-repeat: no-repeat;
+            }
+            &:nth-child(4){
+                width:160px;
+                height:32px;
+                background-image: url("./images/Logo 3.png");
+                background-repeat: no-repeat;
+            }
+            &:nth-child(5){
+                width:160px;
+                height:32px;
+                background-image: url("./images/Logo 4.png");
+                background-repeat: no-repeat;
+            }
+            &:nth-child(6){
+                width:160px;
+                height:32px;
+                background-image: url("./images/Logo 5.png");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

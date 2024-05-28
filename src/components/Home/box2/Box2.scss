@@ -1,0 +1,111 @@
+.content__box2{
+    .container__size{
+        .content{
+            display:flex;
+            height: 100%;
+            column-gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .content__featuredPost{
+                max-width:731px;
+                .label__box2{
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    letter-spacing: -2px;
+                    text-align: left;
+                    margin-bottom: 32px;
+                }
+                .block__cont{
+                    display:grid;
+                    row-gap: 20px;
+                    padding:32px;
+                    max-height:679px;
+                    border:2px solid rgb(221, 221, 221);
+                    .image{
+                        img{
+                            width:100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .label{
+                        display:grid;
+                        row-gap: 20px;
+                        
+                        .text{
+                        }
+                        // h1{
+            
+                        // }
+                        .textTwo{
+                            display:grid;
+                            row-gap: 5px;
+                            .text{
+                                margin-top:5px;
+                                &:nth-child(2){
+                                }
+                            }
+                        }
+                    }
+                    form{
+                        button{
+                            margin-top:30px;
+                            font-size: 15px;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+            .content__allPosts{
+                max-width:517px;
+                .label{
+                    width:100%;
+                    margin-bottom: 32px;
+                    display:flex;
+                    justify-content: space-between;
+                    @media (max-width:768px) {
+                        justify-content:space-around;
+                        
+                    }
+                    align-items: center;
+                    label{ 
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        letter-spacing: -2px;
+                        text-align: left;}
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .block__cont{
+                    .content{
+                        display:grid;
+                        height:100%;
+                        max-width:517px;
+                        height:181px;
+                        padding: 5px 0 0 32px;
+                        &:hover{
+                            background-color: bisque;
+                        }
+                        .label{
+                            margin-bottom: -15px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            text-align: left;
+
+                        }
+                        h2{
+                            text-rendering: auto;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

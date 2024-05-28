@@ -1,0 +1,29 @@
+.conten{
+    margin:128px 0;
+    .container__top{
+        max-width:414px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 32px;
+        margin: 0 auto;
+        .label{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+        }
+        .lorem{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        form{
+            button{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+header{
+    .container{
+        width:100%;
+        height:80px;
+        background-color: #232536;
+        color:#fff;
+        .container__size{
+            .container__content{
+                box-sizing: border-box;
+                padding:0 5px;
+                position:relative;
+                display:flex;
+                align-items: center;
+                height:80px;
+                justify-content: space-between;
+                overflow: hidden;
+                &.active{
+                    overflow:visible;
+
+                }
+                .sh{
+                    max-width: 621px;
+                    font-weight: 700;
+                    font-size: 30px;
+                }
+                .content__two{
+                    display:flex;
+                    align-items: center;
+
+                    @media (max-width:768px) {
+                        position:absolute;
+                        top:-100%;
+                        right:-100%;
+                        width:100%;
+                        background-color: #000000;
+                        height: 250px;
+                        z-index: 5;
+                        box-sizing: border-box;
+
+                        .list{
+                            margin-left:46%;
+                            display:flex;
+                            flex-direction: column;
+                            width:305px;
+                            row-gap: 30px;
+                            margin-right: 32px;
+                            font-size: 17px;
+                            .link{
+                                transition: all 3s ease; 
+                            }
+                        }
+                        .button{
+                            display:none;
+                            visibility: hidden;
+                            button{
+                                letter-spacing: 2px;
+                                font-weight: 700;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }    
+                        &.active{
+                            transition:all 3s ease;
+                            top:0;
+                            right:0;
+                        }
+                    }
+                    .list{
+                        display:flex;
+                        width:305px;
+                        column-gap: 24px;
+                        margin-right: 32px;
+                        font-size: 17px;
+                        .link{
+                            position:relative;
+                            width:70px;
+                            text-align: center;
+                            left:0;
+                            a{
+                                text-decoration: none;
+                                color:#fff;
+                                &:active{
+                                    color:#FFD050;
+
+                                }
+                            }
+                            &:hover::after{
+                                content:'';
+                                position:absolute;
+                                height:3px;
+                                background-color: #FFD050;
+                                bottom:-15px;
+                                padding-left:100%;
+                                left:0;
+                            }
+                            &:hover{
+                                cursor:pointer;
+                            }
+                        }
+                    }
+                    .button{
+                        min-width:179px;
+                        height: 56px;
+                        button{
+                            letter-spacing: 2px;
+                            font-weight: 700;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }    
+                }
+                .burger{
+                    display: none;
+                    visibility: hidden;
+                    &:hover{
+                        cursor:pointer;
+                    }
+                    @media (max-width:768px) {
+                        display:block;
+                        position: relative;
+                        z-index: 5;
+                        visibility: visible;
+                        min-width:40px;
+                        min-height:30px;
+                        span{
+                            position: absolute;
+                            width:100%;
+                            top:45%;
+                            height:3px;
+                            background-color: #fff;
+                        }
+                        &::after{
+                            content: '';
+                            width: 100%;
+                            height:3px;
+                            background-color: #fff;
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            transition:all 0.5s ease;
+                        }
+                        &::before{
+                            content: '';
+                            width: 100%;
+                            height:3px;
+                            background-color: #fff;
+                            position:absolute;
+                            bottom:0;
+                            left:0;
+                            transition:all 0.5s ease;
+                        }
+                        &.active{
+                            span{
+                                visibility: hidden;
+                                display:none;
+                            }
+                            &::after{
+                                transform: rotate(40deg);
+                                margin-top: 16px;
+                            }
+                            &::before{
+                                transform: rotate(-40deg);
+                                margin-bottom:20px;
+                            }
+                            &::after,&::before{
+                                transition:all 0.5s ease;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

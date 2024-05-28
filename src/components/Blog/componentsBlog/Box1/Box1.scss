@@ -1,0 +1,64 @@
+.Box1__contain{
+    background-color: #F4F0F8;
+    width:100%;
+    .container__size{
+        padding:80px 0;
+        .block__contents{
+            display:flex;
+            width:100%;
+            column-gap: 181px;
+            flex-wrap: wrap;
+            .content{
+                &:nth-child(1){
+                    display:grid;
+                    max-width:624px;
+                    min-height: 332px;
+                    .label{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        letter-spacing: 3px;
+                        text-align: left;
+                        text-transform: uppercase;
+
+                    }
+                    h1{
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        letter-spacing: -2px;
+                        text-align: left;
+                    }
+                    .text2024{
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-align: left;
+                    }
+                    .text{
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        text-align: left;
+
+                    }
+                    form{
+                        button{}
+                    }
+                }
+                &:nth-child(2){
+                    .contentImage{
+                        max-width:515px;
+                        height:359px;
+                        img{
+                            width:100%;
+                            height:100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
